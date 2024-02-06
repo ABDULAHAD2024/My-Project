@@ -1,0 +1,119 @@
+:root {
+  --primaryFont: 'Montserrat', sans-serif;
+  --secFont: 'Fraunces', serif;
+
+  --Darkcyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+
+  --Verydarkblue: hsl(212, 21%, 14%);
+  --Darkgrayishblue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: var(--primaryFont);
+  font-size: 14px;
+  font-weight: 300;
+  background: var(--Cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--secFont);
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+p {
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.card {
+  width: 600px;
+  display: flex;
+}
+.card-img {
+  flex-basis: 50%;
+}
+.card-img img.desktop {
+  border-radius: 10px 0 0 10px;
+  display: block;
+}
+.card-img img.mobile {
+  border-radius: 10px 10px 0;
+  display: none;
+}
+.card-body {
+  flex-basis: 50%;
+  background: var(--White);
+  border-radius: 0 10px 10px 0;
+  padding: 30px;
+}
+.card-body h2 {
+  color: var(--Verydarkblue);
+  font-size: 32px;
+}
+.card-body h6 {
+  color: var(--Darkgrayishblue);
+  font-family: var(--primaryFont);
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.card-body p {
+  font-size: 14px;
+  color: var(--Darkgrayishblue);
+  line-height: 1.5em;
+}
+.card-body p.price {
+  font-family: var(--secFont);
+  color: var(--Darkcyan);
+  font-size: 32px;
+}
+.card-body p.price span {
+  font-family: var(--primaryFont);
+  color: var(--Darkgrayishblue);
+  font-size: 14px;
+  text-decoration: line-through;
+  position: relative;
+  top: -5px;
+}
+.card-body button {
+  background: var(--Darkcyan);
+  border: 0;
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  color: var(--White);
+  font width: 400;
+
+}
+.card-body button img{
+  display: inline-block;
+  padding-right: 10px;
+  position: relative;
+  top:3px;
+
+}
